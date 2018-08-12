@@ -4,6 +4,8 @@
   "description": "Instantly share a file",
   "main": "index.js",
   "scripts": {
+    "peer1": "DEBUG=linkup:* node index.js",
+    "peer2": "DEBUG=linkup:* node test.js",
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

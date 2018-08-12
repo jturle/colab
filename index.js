@@ -25,8 +25,13 @@ peer.on("message", function(envelope) {
 peer.on("error", function(err) {
   console.error(err);
 });
-console.log(peer);
-// send a message to a peer
 peer.send("peer2", "hi peer2!").catch(function(err) {
   console.error(err);
 });
+// console.log(peer);
+// send a message to a peer
+setInterval(function() {
+  peer.send("peer2", "hi peer2!").catch(function(err) {
+    console.error(err);
+  });
+}, 2000);
