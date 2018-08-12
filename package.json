@@ -1,0 +1,29 @@
+{
+  "name": "colab",
+  "version": "1.0.0",
+  "description": "Instantly share a file",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jturle/colab.git"
+  },
+  "keywords": [
+    "rtc",
+    "file",
+    "sync"
+  ],
+  "author": "James Turle",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/jturle/colab/issues"
+  },
+  "homepage": "https://github.com/jturle/colab#readme",
+  "dependencies": {
+    "linkup": "^0.4.1",
+    "wrtc": "^0.1.6"
+  }
+}
