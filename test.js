@@ -1,7 +1,20 @@
 var linkup = require("linkup");
 
+const options = {
+  browserUrl: "wss://linkup-broker.herokuapp.com",
+  simplePeer: {
+    trickle: true,
+    config: {
+      iceServers: [
+        {
+          urls: ["stun:23.21.150.121"] // default of simple-peer
+        }
+      ]
+    }
+  }
+};
 // create a peer with some id
-var peer = linkup.createPeer("peer2");
+var peer = linkup.createPeer("peer2", options);
 
 // listen for messages from other peers
 peer.on("message", function(envelope) {

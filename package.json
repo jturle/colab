@@ -24,6 +24,7 @@
   "homepage": "https://github.com/jturle/colab#readme",
   "dependencies": {
     "linkup": "^0.4.1",
+    "nat-upnp": "^1.1.1",
     "wrtc": "^0.1.6"
   }
 }
